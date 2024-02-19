@@ -2,7 +2,7 @@ class Library:
     def __init__(self, file_name):
         self.file_name = file_name
         self.file = open(self.file_name, "a+")
-        self.file.seek(0)  # Move the file pointer to the beginning
+        self.file.seek(0)
 
     def list_books(self):
         self.file.seek(0)
